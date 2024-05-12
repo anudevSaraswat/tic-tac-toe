@@ -1,0 +1,11 @@
+.table {
+    border: 5px solid aqua;
+    height: 600px;
+    width: 600px;
+}
+
+.cell {
+    width: 200px;
+    height: 200px;
+    border: 5px solid red; 
+}
