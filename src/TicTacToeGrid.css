@@ -1,11 +1,31 @@
 .table {
-    border: 5px solid aqua;
-    height: 600px;
-    width: 600px;
+    /* border: 4px solid aqua; */
+    height: 330px;
+    width: 330px;
+    margin: auto;
 }
 
 .cell {
-    width: 200px;
-    height: 200px;
-    border: 5px solid red; 
+    width: 110px;
+    height: 110px;
+    border: 3px solid red; 
+}
+
+.cell-X {
+    width: 110px;
+    height: 110px;
+    border: 3px solid red; 
+    background-color: goldenrod;
+}
+
+.cell-O {
+    width: 110px;
+    height: 110px;
+    border: 3px solid red;
+    background-color: burlywood;
+}
+
+.reset {
+    background-color: burlywood;
+    margin-top: 40px;
 }
