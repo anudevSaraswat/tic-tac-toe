@@ -5,6 +5,14 @@
     margin: auto;
 }
 
+.winner {
+    visibility: hidden;
+}
+
+.winner-winner {
+    visibility: visible;
+}
+
 .cell {
     width: 110px;
     height: 110px;
