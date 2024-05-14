@@ -14,16 +14,15 @@ export function TicTacToeGrid() {
         if (xOrO === 'X') {
             if (cells[num] === '') {
                 cells[num] = 'X';
-                setCellValue(cells);
                 setXOrO('O');
             }
         } else {
             if (cells[num] === '') {
                 cells[num] = 'O';
-                setCellValue(cells);
                 setXOrO('X');
             }
         }
+        setCellValue(cells);
         let status = checkWinning(cells)
         if (status) {
             setWinning(xOrO);
