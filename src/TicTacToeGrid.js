@@ -30,7 +30,6 @@ export function TicTacToeGrid() {
     }
 
     function checkWinning(cellsArr) {
-        console.log({ cellsArr })
         // check for all the rows
         if (((cellsArr[0] !== '' && cellsArr[1] !== '' && cellsArr[2] !== '') && cellsArr[0] === cellsArr[1] && cellsArr[1] === cellsArr[2]) ||
         ((cellsArr[3] !== '' && cellsArr[4] !== '' && cellsArr[5] !== '') && cellsArr[3] === cellsArr[4] && cellsArr[4] === cellsArr[5]) ||
