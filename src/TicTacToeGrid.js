@@ -8,22 +8,25 @@ export function TicTacToeGrid() {
     const [winning, setWinning] = useState('');
 
     function handleClick(num) {
-        let player = '';
+        if (winning !== '') {
+            return
+        }
         if (xOrO === 'X') {
-            cells[num] = 'O';
-            player = 'O';
-            setCellValue(cells);
-            setXOrO('O');
+            if (cells[num] === '') {
+                cells[num] = 'X';
+                setCellValue(cells);
+                setXOrO('O');
+            }
         } else {
-            cells[num] = 'X';
-            player = 'X';
-            setCellValue(cells);
-            setXOrO('X');
+            if (cells[num] === '') {
+                cells[num] = 'O';
+                setCellValue(cells);
+                setXOrO('X');
+            }
         }
         let status = checkWinning(cells)
-        console.log(status)
         if (status) {
-            setWinning(player);
+            setWinning(xOrO);
         }
     }
 
